@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::post('url_create','ShorturlsController@create');
+Route::get('get_url','ShorturlsController@geturls');
+Route::get('get_url1','ShorturlsController@geturls1');
+
+Route::get('{val}','ShorturlsController@show')->name('shorturl.link');
